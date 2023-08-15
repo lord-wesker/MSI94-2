@@ -102,12 +102,21 @@ letters_array <- c("d", "o", "g")
 #######################
 # 1.4.3 Data
 #######################
-# 1.4.3.c Clasify data variables
+# 1.4.3.c Classify data variables
 # Gender: Categorical - Nominal
 # Weight: Continuous - Ratio
 # Height: Continuous - Ratio
-
-
+#######################
+# 1.4.3.g Value encoded as NA:
+# The computer encoding is consistent with the continuous and categorical distinction because:
+# - Continuous Data Encoding: Storing continuous data as "double" 
+#   allows the computer to accurately represent real numbers with 
+#   precision. It supports arithmetic operations, decimal values,
+#   and continuous ranges.
+# - Categorical Data Encoding: Storing categorical data as "factor"
+#   allows the computer to efficiently manage discrete categories.
+#   Factors ensure that each category is represented by a unique integer
+#   level, optimizing memory usage and enabling efficient comparisons and grouping.
 
 
 
