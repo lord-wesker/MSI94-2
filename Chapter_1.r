@@ -28,7 +28,7 @@ plus_two <- function(data) {
 
 # Multiplies by 2 to every number on data
 multiply_by_two <- function(data) {
-  results = numeric(length(data))
+  results <- numeric(length(data))
 
   for (i in 1:length(data)) {
     results[i] <- data[i] * 2
@@ -51,7 +51,7 @@ pipe_multiply_by_two <- function(data) {
 
 # Adds and Multiplies by 2 to every number on the array
 plus_result <- plus_two(numbers_array)
-multiply_result <- multiply_by_two(plus_result)
+multiply_result = multiply_by_two(plus_result)
 
 # Adds and Multiplies by 2 to every number on the array
 # using magrittr pipe operator
@@ -68,10 +68,26 @@ employee_data <- Read("http://lessRstats.com/data/employee.xlsx")
 # employee_data <- Read("http://lessRstats.com/data/Mach4.fwd", format = "text")
 
 # Show XLSX data on the console
-head(employee_data)
+employee_data # Shows the entire data set
+head(employee_data) # Shows first elements
+tail(employee_data) # Shows last elements
+names(employee_data) # Show table variable names
+dim(employee_data) # Shows table dimensions (x, y)
+nrow(employee_data) # Shows table rows size
+ncol(employee_data) # Shows table columns size
 
 # Bar chart with bars of alternating color for data in data frame d
-BarChart(employee_data, fill=c("darkred", "darkblue"))
+BarChart(Gender, fill=c("darkred", "darkblue"), data = employee_data)
+
+# Create a matrix
+my_matrix <- matrix(1:9, nrow = 3, ncol = 3)
+print(my_matrix)
+# Access first row
+row_1 <- my_matrix[1,] # Using [1,] allows to access the entire row 
+print(row_1)
+# Access first column
+col_1 <- my_matrix[,1] # Using [,1] allows to access the entire column 
+print(col_1)
 
 # 1.4 Analysis Problems
 #######################
@@ -86,3 +102,14 @@ letters_array <- c("d", "o", "g")
 #######################
 # 1.4.3 Data
 #######################
+# 1.4.3.c Clasify data variables
+# Gender: Categorical - Nominal
+# Weight: Continuous - Ratio
+# Height: Continuous - Ratio
+
+
+
+
+
+
+
