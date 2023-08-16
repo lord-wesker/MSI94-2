@@ -103,9 +103,9 @@ letters_array <- c("d", "o", "g")
 # 1.4.3 Data
 #######################
 # 1.4.3.c Classify data variables
-# Gender: Categorical - Nominal
-# Weight: Continuous - Ratio
-# Height: Continuous - Ratio
+# Gender: Categorical - Nominal - character
+# Weight: Continuous - Ratio - double
+# Height: Continuous - Ratio - double
 #######################
 # 1.4.3.g Value encoded as NA:
 # The computer encoding is consistent with the continuous and categorical distinction because:
