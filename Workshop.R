@@ -2,6 +2,7 @@
 # data("mtcars");
 mtcars<- read_csv('./mtcars.csv')
 
+# Imprimit conjunto de datos
 mtcars
 
 # Calcular la media de la columna 'mpg'
@@ -10,9 +11,10 @@ media_mpg <- mean(mtcars$mpg)
 # Imprimir el resultado
 print(media_mpg)
 
-
+# Crear archivos CSV usando la funcion write
 write.csv(mtcars, file = 'mtcars.csv', row.names = FALSE)
 
+# Crear archivos CSV usando la funcion write_csv
 write_csv(mtcars, "./mtcars_write.csv")
 
 # rm -> Remove
