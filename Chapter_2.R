@@ -15,6 +15,7 @@ library(lessR)
 
 # Read data from a computer file on the web into R
 # d <- Read("http://lessRstats.com/data/employee.csv")
+# d <- Read("http://lessRstats.com/data/employee.csv", var_labels = TRUE)
 
 # Read data from a lessR data file
 # d <- Read("Employee")
@@ -30,14 +31,20 @@ library(lessR)
 
 # Read a SPSS .sav data file that includes value labels
 # d <- Read("http://lessRstats.com/data/SPSS/employee.sav")
-# d <- Read("http://lessRstats.com/data/SPSS/Mach4.sav")
+# d <- Read("http://lessRstats.com/data/SPSS/Mach4.sav", var_labels=TRUE)
+# l <- Read("http://lessRstats.com/data/SPSS/Mach4.sav", var_labels=TRUE)
 
 # Input. Read fixed width formatted data with numbered variable names
-d <- Read("http://lessRstats.com/data/SPSS/Mach4.sav", widths=c(4,1,rep(1,20)),
-          col.names=c("ID", "Gender", to("m",20)), fill=TRUE, var_labels=TRUE)
+# d <- Read("http://lessRstats.com/data/SPSS/Mach4.sav", widths=c(4,1,rep(1,20)),
+#           col.names=c("ID", "Gender", to("m",20)), fill=TRUE)
 
 # Missing data of variable Years for James Wu, second line of data, NA.
-head(d, n=2)
+# head(d, n=2)
 
 # More detailed analysis of data with full details() function
-details()
+# details()
+
+# display a histogram
+# hist(d$m06, breaks=seq(-.5, 5.5, 1), xlab = label(m06))
+
+
